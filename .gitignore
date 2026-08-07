@@ -1,0 +1,73 @@
+# ==============================
+# Visual Studio files
+# ==============================
+.vs/
+**/.vs/
+
+# ==============================
+# .NET Build output
+# ==============================
+**/bin/
+**/obj/
+
+# ==============================
+# User-specific files
+# ==============================
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ==============================
+# ASP.NET Core generated files
+# ==============================
+appsettings.Development.json
+
+# Uncomment if you don't want to track production secrets
+# appsettings.*.json
+
+# ==============================
+# Logs
+# ==============================
+*.log
+
+# ==============================
+# Database files
+# ==============================
+*.mdf
+*.ldf
+*.sqlite
+*.db
+
+# ==============================
+# Node / React frontend
+# ==============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+dist/
+build/
+
+# Environment variables
+.env
+.env.*
+
+# ==============================
+# VS Code
+# ==============================
+.vscode/
+
+# ==============================
+# OS generated files
+# ==============================
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Temporary files
+# ==============================
+*.tmp
+*.temp
+*.swp
