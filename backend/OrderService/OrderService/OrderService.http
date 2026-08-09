@@ -1,0 +1,11 @@
+@OrderService_HostAddress = http://localhost:5111
+
+GET {{OrderService_HostAddress}}/todos/
+Accept: application/json
+
+###
+
+GET {{OrderService_HostAddress}}/todos/1
+Accept: application/json
+
+###
