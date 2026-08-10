@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+2026/08/01-19:12:02.201 3b98 Reusing MANIFEST C:\Users\nitin\Desktop\RestaurantManagementProject\Qr-Dining\backend\notifyService\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2026/08/01-19:12:02.222 3b98 Recovering log #3
+2026/08/01-19:12:02.232 3b98 Reusing old log C:\Users\nitin\Desktop\RestaurantManagementProject\Qr-Dining\backend\notifyService\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
+=======
+2026/08/02-00:04:20.544 1dc8 Reusing MANIFEST C:\Users\dhawa\vs project\Qr-dining\backend\notifyService\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2026/08/02-00:04:20.860 1dc8 Recovering log #3
+2026/08/02-00:04:20.865 1dc8 Reusing old log C:\Users\dhawa\vs project\Qr-dining\backend\notifyService\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
+>>>>>>> 4d5fece9889cb97d6050c8d4ebf1736a4756124c

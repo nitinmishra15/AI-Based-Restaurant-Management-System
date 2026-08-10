@@ -1,0 +1,7 @@
+<<<<<<< HEAD
+2026/08/01-19:11:31.180 7674 Creating DB C:\Users\nitin\Desktop\RestaurantManagementProject\Qr-Dining\backend\notifyService\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\shared_proto_db\metadata since it was missing.
+2026/08/01-19:11:31.295 7674 Reusing MANIFEST C:\Users\nitin\Desktop\RestaurantManagementProject\Qr-Dining\backend\notifyService\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\shared_proto_db\metadata/MANIFEST-000001
+=======
+2026/08/01-22:25:01.844 372c Creating DB C:\Users\dhawa\vs project\Qr-dining\backend\notifyService\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\shared_proto_db\metadata since it was missing.
+2026/08/01-22:25:01.865 372c Reusing MANIFEST C:\Users\dhawa\vs project\Qr-dining\backend\notifyService\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\shared_proto_db\metadata/MANIFEST-000001
+>>>>>>> 4d5fece9889cb97d6050c8d4ebf1736a4756124c

@@ -1,0 +1,7 @@
+<<<<<<< HEAD
+2026/08/01-19:11:30.899 4cd0 Creating DB C:\Users\nitin\Desktop\RestaurantManagementProject\Qr-Dining\backend\notifyService\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database since it was missing.
+2026/08/01-19:11:30.971 4cd0 Reusing MANIFEST C:\Users\nitin\Desktop\RestaurantManagementProject\Qr-Dining\backend\notifyService\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/MANIFEST-000001
+=======
+2026/08/01-22:25:01.793 95dc Creating DB C:\Users\dhawa\vs project\Qr-dining\backend\notifyService\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database since it was missing.
+2026/08/01-22:25:01.870 95dc Reusing MANIFEST C:\Users\dhawa\vs project\Qr-dining\backend\notifyService\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/MANIFEST-000001
+>>>>>>> 4d5fece9889cb97d6050c8d4ebf1736a4756124c

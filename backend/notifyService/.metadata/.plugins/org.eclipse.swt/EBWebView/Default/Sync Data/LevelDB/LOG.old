@@ -1,0 +1,7 @@
+<<<<<<< HEAD
+2026/08/01-19:11:30.901 7674 Creating DB C:\Users\nitin\Desktop\RestaurantManagementProject\Qr-Dining\backend\notifyService\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Sync Data\LevelDB since it was missing.
+2026/08/01-19:11:30.970 7674 Reusing MANIFEST C:\Users\nitin\Desktop\RestaurantManagementProject\Qr-Dining\backend\notifyService\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Sync Data\LevelDB/MANIFEST-000001
+=======
+2026/08/01-22:25:01.801 3930 Creating DB C:\Users\dhawa\vs project\Qr-dining\backend\notifyService\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Sync Data\LevelDB since it was missing.
+2026/08/01-22:25:01.876 3930 Reusing MANIFEST C:\Users\dhawa\vs project\Qr-dining\backend\notifyService\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Sync Data\LevelDB/MANIFEST-000001
+>>>>>>> 4d5fece9889cb97d6050c8d4ebf1736a4756124c
