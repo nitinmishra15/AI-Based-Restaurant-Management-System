@@ -6,7 +6,7 @@ import CategorySection from './CategorySection';
 import IndianCafeClassics from './IndianCafeClassics';
 import ProductGrid from './ProductGrid';
 import TodayDesiDelights from './TodayDesiDelights';
-import FloatingAIButton from './FloatingAIButton';
+import FloatingAIButton from './FloatingAiButton';
 import CartDrawer from './CartDrawer';
 import AIAssistantModal from './AIAssistantModal';
 import { useCart } from '../../../shared/hooks/useCart';
