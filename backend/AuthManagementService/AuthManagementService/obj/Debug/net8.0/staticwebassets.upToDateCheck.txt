@@ -1,2 +1,0 @@
-wwwroot\images\staff_karan sharma.jpg
-wwwroot\images\staff_john doe.jpg
