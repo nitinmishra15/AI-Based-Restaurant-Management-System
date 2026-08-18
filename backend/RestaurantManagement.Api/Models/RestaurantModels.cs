@@ -52,6 +52,7 @@ namespace RestaurantManagement.Api.Models
         [MaxLength(100)]
         public string CategoryName { get; set; } = string.Empty;
 
+        [System.Text.Json.Serialization.JsonIgnore]
         public ICollection<MenuItem> MenuItems { get; set; } = new List<MenuItem>();
     }
 
@@ -75,6 +76,9 @@ namespace RestaurantManagement.Api.Models
         [Required]
         public int CategoryId { get; set; }
 
+        public string? CategoryName => Category?.CategoryName;
+
+        [System.Text.Json.Serialization.JsonIgnore]
         public Category? Category { get; set; }
 
         public string? ImageUrl { get; set; }
