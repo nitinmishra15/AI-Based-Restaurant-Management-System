@@ -3,6 +3,7 @@ import axios from "axios";
 import { useAuth } from "../../../app/providers/AuthContextApi/AuthProvider";
 import { useNavigate } from "react-router-dom";
 import { User, Mail, Phone, Edit3, Save, X, ArrowLeft } from "lucide-react";
+import { API_ENDPOINTS } from "../../../config/api";
 
 function Profile() {
   const { user } = useAuth();
@@ -17,7 +18,7 @@ function Profile() {
   const fetchProfile = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await axios.get("https://localhost:44383/api/profile", {
+      const response = await axios.get(API_ENDPOINTS.PROFILE, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -66,7 +67,7 @@ function Profile() {
     setSaving(true);
     try {
       const token = localStorage.getItem("token");
-      await axios.put("https://localhost:44383/api/profile", formData, {
+      await axios.put(API_ENDPOINTS.PROFILE, formData, {
         headers: {
           Authorization: `Bearer ${token}`
         }

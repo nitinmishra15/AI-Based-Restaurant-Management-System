@@ -1,11 +1,10 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
+import { API_ENDPOINTS } from '../../../config/api';
 
 const AuthContext = createContext(null);
 
-// The port 5244 is the default HTTP port for our ASP.NET Core API.
-// Change this to match your backend port if needed (e.g., https://localhost:7198 for HTTPS)
-const API_BASE_URL = 'https://localhost:44383/api/auth';
+const API_BASE_URL = API_ENDPOINTS.AUTH;
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);

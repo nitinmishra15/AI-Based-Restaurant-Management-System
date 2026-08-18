@@ -4,6 +4,7 @@ import OrderCard from "../component/OrderCard";
 import OrderHistory from "../component/OrderHistory";
 import { useTable } from "../../../app/providers/TableContextApi/TableProvider";
 import { useAuth } from "../../../app/providers/AuthContextApi/AuthProvider";
+import { API_ENDPOINTS } from "../../../config/api";
 
 function Orders() {
   const { tableId } = useTable();
@@ -21,7 +22,7 @@ function Orders() {
 
     const fetchOrders = async () => {
       try {
-        const response = await axios.get("https://localhost:44311/api/orders");
+        const response = await axios.get(API_ENDPOINTS.ORDERS);
         const data = response.data || [];
         
         // Filter orders by active tableId and user's placed order IDs
@@ -90,7 +91,7 @@ function Orders() {
     try {
       const token = localStorage.getItem("token");
       // DELETE request to the C# Order Service
-      const response = await axios.delete(`https://localhost:44311/api/orders/${orderId}`, {
+      const response = await axios.delete(`${API_ENDPOINTS.ORDERS}/${orderId}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }

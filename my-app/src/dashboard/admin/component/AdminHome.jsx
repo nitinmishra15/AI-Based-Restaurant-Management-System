@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import axios from "axios";
 import { Edit2, Trash2, CheckCircle2, Clock, X, Save } from "lucide-react";
+import { API_ENDPOINTS } from "../../../config/api";
 
 export default function AdminHome() {
   const { searchQuery } = useOutletContext();
@@ -23,7 +24,7 @@ export default function AdminHome() {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.get("https://localhost:44311/api/orders");
+      const response = await axios.get(API_ENDPOINTS.ORDERS);
       // Sort newest orders first
       const data = response.data || [];
       setOrders(data.reverse());
@@ -41,7 +42,7 @@ export default function AdminHome() {
   const handleDelete = async (id) => {
     if (!window.confirm("Are you sure you want to delete this order?")) return;
     try {
-      await axios.delete(`https://localhost:44311/api/orders/${id}`);
+      await axios.delete(`${API_ENDPOINTS.ORDERS}/${id}`);
       alert("Order deleted successfully!");
       fetchOrders();
     } catch (err) {
@@ -72,7 +73,7 @@ export default function AdminHome() {
 
   const handleSaveEdit = async (id) => {
     try {
-      await axios.put(`https://localhost:44311/api/orders/${id}`, {
+      await axios.put(`${API_ENDPOINTS.ORDERS}/${id}`, {
         TableId: parseInt(editFormData.tableId),
         OrderItems: editFormData.orderItems,
         Price: parseFloat(editFormData.price),
@@ -94,7 +95,7 @@ export default function AdminHome() {
     if (duration === null) return; // user cancelled
 
     try {
-      await axios.put(`https://localhost:44311/api/orders/${order.id}`, {
+      await axios.put(`${API_ENDPOINTS.ORDERS}/${order.id}`, {
         TableId: order.tableId,
         OrderItems: order.orderItems,
         Price: order.price,

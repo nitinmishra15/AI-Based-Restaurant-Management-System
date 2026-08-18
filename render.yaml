@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: restaurant-management-api
+    runtime: docker
+    dockerfilePath: Dockerfile
+    plan: free
+    region: oregon
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: ConnectionStrings__DefaultConnection
+        value: Data Source=restaurant.db
+      - key: Jwt__SecretKey
+        generateValue: true
+      - key: Jwt__Issuer
+        value: RestaurantAuthService
+      - key: Jwt__Audience
+        value: RestaurantReactClient

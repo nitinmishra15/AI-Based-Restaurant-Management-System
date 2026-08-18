@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
+import { API_ENDPOINTS } from "../../../config/api";
 
 export const StaffContext = createContext();
 
@@ -7,7 +8,7 @@ const StaffProvider = ({ children }) => {
 
     const [staffs, setStaffs] = useState([]);
 
-    const API = "https://localhost:7155/api/Staff";
+    const API = API_ENDPOINTS.STAFF;
 
     // GET ALL STAFF
 

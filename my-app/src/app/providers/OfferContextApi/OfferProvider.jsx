@@ -1,5 +1,6 @@
 import React, { createContext, useState, useEffect } from "react";
 import axios from "axios";
+import { API_ENDPOINTS } from "../../../config/api";
 
 export const OfferContext = createContext();
 
@@ -9,8 +10,8 @@ export const OfferProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const API_BASE = "https://localhost:44367/api/Offer";
-  const AI_API_BASE = "https://localhost:44367/api/offers";
+  const API_BASE = API_ENDPOINTS.OFFERS;
+  const AI_API_BASE = API_ENDPOINTS.OFFERS_AI;
 
   // Normalize API data to camelCase for the frontend
   const normalizeOffer = (offer) => {

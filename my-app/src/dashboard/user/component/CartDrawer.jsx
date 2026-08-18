@@ -4,6 +4,7 @@ import { useCart } from '../../../shared/hooks/useCart';
 import axios from 'axios';
 import { useTable } from '../../../app/providers/TableContextApi/TableProvider';
 import { useAuth } from '../../../app/providers/AuthContextApi/AuthProvider';
+import { API_ENDPOINTS } from '../../../config/api';
 import LoginViaMobile from './LoginViaMobile';
 import LoginViaCredential from './LoginViaCredential';
 
@@ -66,7 +67,7 @@ export default function CartDrawer({ isOpen, onClose }) {
     };
 
     try {
-      const response = await axios.post("https://localhost:44311/api/orders", orderPayload, {
+      const response = await axios.post(API_ENDPOINTS.ORDERS, orderPayload, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -109,7 +110,7 @@ export default function CartDrawer({ isOpen, onClose }) {
     };
 
     try {
-      const response = await axios.post("https://localhost:44311/api/payments/process", paymentPayload);
+      const response = await axios.post(API_ENDPOINTS.PAYMENTS, paymentPayload);
       if (response.data && response.data.success) {
         const txnId = response.data.transactionId;
         // Continue to save order

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { API_ENDPOINTS } from "../../../config/api";
 import {
     Mail,
     Phone,
@@ -23,7 +24,7 @@ export default function Profile() {
     const fetchProfile = async () => {
         try {
             const token = localStorage.getItem("token");
-            const response = await axios.get("https://localhost:44383/api/profile", {
+            const response = await axios.get(API_ENDPOINTS.PROFILE, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -74,7 +75,7 @@ export default function Profile() {
         setSaving(true);
         try {
             const token = localStorage.getItem("token");
-            await axios.put("https://localhost:44383/api/profile", {
+            await axios.put(API_ENDPOINTS.PROFILE, {
                 name: formData.name,
                 email: formData.email,
                 mobile: formData.mobile

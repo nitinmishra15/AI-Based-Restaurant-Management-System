@@ -1,5 +1,6 @@
 import React, { createContext, useState, useEffect } from "react";
 import axios from "axios";
+import { API_ENDPOINTS } from "../../../config/api";
 
 export const InventoryContext = createContext();
 
@@ -9,8 +10,8 @@ export const InventoryProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const API_BASE = "https://localhost:44345/api/Inventory";
-  const AI_API_BASE = "https://localhost:44345/api/inventory";
+  const API_BASE = API_ENDPOINTS.INVENTORY;
+  const AI_API_BASE = API_ENDPOINTS.INVENTORY_AI;
 
   // Fetch all inventory items
   const fetchInventory = async () => {
